@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maddileti Services - Home-Cooked Catering</title>
+    <link rel="stylesheet" href="asstes/css/styles.css">
+    <link rel="stylesheet" href="asstes/css/type1.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <img src="asstes/img/Logo.png" alt="Maddileti Services Logo">
+            </div>
+            <h1>Maddileti Services</h1>
+            <p>Authentic Home-Cooked Meals-Crafted with Love</p>
+            <a href="#contact" class="cta-button">Order Now</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="menu">Our Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="telugu.html">తెలుగు</a></li>
+        </ul>
+    </nav>
+    <section class="menuribbon">
+        <div class="type1">
+            <img src="asstes/img/Logo.png" alt="Type1menu">
+            <h1>Type 1</h1><br>
+            <button><a href="type1.html">Order</a></button>
+        </div>
+        <div class="type1">
+            <img src="asstes/img/Logo.png" alt="Type1menu">
+            <h1>Type 2</h1><br>
+            <button><a href="type1.html">Order</a></button>
+        </div>
+        <div class="type1">
+            <img src="asstes/img/Logo.png" alt="Type1menu">
+            <h1>Type 3</h1><br>
+            <button><a href="type1.html">Order</a></button>
+        </div>
+        <div class="type1">
+            <img src="asstes/img/Logo.png" alt="Type1menu">
+            <h1>Type 4</h1><br>
+            <button><a href="type1.html">Order</a></button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Maddileti Services</h2>
+        <p>At Maddileti Services, we bring the warmth and taste of home-cooked meals straight from the heart of Kadapa. Our dishes are prepared in homes, ensuring authentic flavors and the highest quality. Whether it's a family gathering or a special event, we cater to your needs with love and care.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <p>From traditional Andhra curries to delightful sweets, our menu is designed to satisfy your cravings. Each dish is made with fresh ingredients and time-honored recipes passed down through generations.</p>
+        <p>Contact us to explore our full menu and customize your order!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to enjoy the taste of home? Reach out to us for your next event or meal.</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Email: info@maddiletiservices.com</p>
+        <p>Address: Kadapa, Andhra Pradesh, India</p>
+        <a href="mailto:info@maddiletiservices.com" class="cta-button">Get in Touch</a>
+    </section>
+    <section class="cart-sidebar" id="cart-sidebar">
+        <h2>Your Cart / మీ కార్ట్</h2>
+        <div id="cart-items"></div>
+        <button class="close-cart">Close / మూసివేయండి</button>
+    </section>
+    <button class="cart-toggle" id="cart-toggle">Cart / కార్ట్</button>
+    <footer>
+        <p>© 2025 Maddileti Services. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const cart = {};
+const cartItemsContainer = document.getElementById('cart-items');
+const cartSidebar = document.getElementById('cart-sidebar');
+const cartToggle = document.getElementById('cart-toggle');
+const closeCart = document.querySelector('.close-cart');
+
+function updateCart() {
+    cartItemsContainer.innerHTML = '';
+    for (const category in cart) {
+        const item = cart[category];
+        const cartItem = document.createElement('div');
+        cartItem.className = 'cart-item';
+        cartItem.innerHTML = `
+            <span>${item}</span>
+            <button onclick="removeFromCart('${category}')">Remove / తొలగించు</button>
+        `;
+        cartItemsContainer.appendChild(cartItem);
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function removeFromCart(category) {
+    delete cart[category];
+    updateCart();
+}
+
+cartToggle.addEventListener('click', () => {
+    cartSidebar.classList.toggle('active');
+});
+
+closeCart.addEventListener('click', () => {
+    cartSidebar.classList.remove('active');
+});
+
+window.addEventListener('load', () => {
+    const savedCart = localStorage.getItem('cart');
+    if (savedCart) {
+        Object.assign(cart, JSON.parse(savedCart));
+    }
+    updateCart();
+});
+    </script>
+</body>
+</html>

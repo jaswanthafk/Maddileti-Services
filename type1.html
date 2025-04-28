@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maddileti Services - Menu1</title>
+    <link rel="stylesheet" href="asstes/css/type1.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <img src="asstes/img/Logo.png" alt="Maddileti Services Logo">
+            </div>
+            <h1>Our Menu / మా మెనూ</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home / హోమ్</a></li>
+            <li><a href="#main-course">Main Course / మెయిన్ కోర్స్</a></li>
+            <li><a href="#sweets-snacks">Sweets & Snacks / స్వీట్లు & స్నాక్స్</a></li>
+            <li><a href="#additional">Additional Items / అదనపు అంశాలు</a></li>
+        </ul>
+    </nav>
+    <section class="cart-sidebar" id="cart-sidebar">
+        <h2>Your Cart / మీ కార్ట్</h2>
+        <div id="cart-items"></div>
+        <button class="close-cart">Close / మూసివేయండి</button>
+    </section>
+    <button class="cart-toggle" id="cart-toggle">Cart / కార్ట్</button>
+
+    <section class="menu-section" id="main-course">
+        <h2>Main Course / మెయిన్ కోర్స్</h2><br>
+        <div class="menu-category" data-category="flavoured-rice">
+            <h3>Flavoured Rice / ఫ్లేవర్డ్ రైస్ (Choose One / ఒకటి ఎంచుకోండి)</h3><br><br>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/main Course/lemonrice.png" alt="Lemon Rice">
+                    <p>Lemon Rice</p>
+                    <p class="telugu">లెమన్ రైస్</p>
+                    <button class="add-to-cart" data-item="Lemon Rice / లెమన్ రైస్">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/main Course/mangorice.png" alt="Mango Rice">
+                    <p>Mango Rice</p>
+                    <p class="telugu">మామిడికాయ రైస్</p>
+                    <button class="add-to-cart" data-item="Mango Rice / మామిడికాయ రైస్">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/main Course/podinarice.png" alt="Pudina Rice">
+                    <p>Pudina Rice</p>
+                    <p class="telugu">పొదినా రైస్</p>
+                    <button class="add-to-cart" data-item="Pudina Rice / పొదినా రైస్">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/main Course/curryleavesrice.png" alt="Curry Leaves Rice">
+                    <p>Curry Leaves Rice</p>
+                    <p class="telugu">కర్రివేపాకు రైస్</p>
+                    <button class="add-to-cart" data-item="Curry Leaves Rice / కర్రివేపాకు రైస్">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/main Course/jeerarice.png" alt="Jeera Rice">
+                    <p>Jeera Rice</p>
+                    <p class="telugu">జీరా రైస్</p>
+                    <button class="add-to-cart" data-item="Jeera Rice / జీరా రైస్">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/lo" alt="Pulihora">
+                    <p>Pulihora (Tamarind)</p>
+                    <p class="telugu">పులిహోర రైస్ (చింతపండు)</p>
+                    <button class="add-to-cart" data-item="Pulihora (Tamarind) / పులిహోర రైస్ (చింతపండు)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Sada Pulav">
+                    <p>Sada Pulav</p>
+                    <p class="telugu">సాదా పులావ్</p>
+                    <button class="add-to-cart" data-item="Sada Pulav / సాదా పులావ్">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category" data-category="curries">
+            <h3>Curries / కర్రీలు (Choose One / ఒకటి ఎంచుకోండి)</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Gutti Vankaya Curry">
+                    <p>Gutti Vankaya Curry</p>
+                    <p class="telugu">గుత్తి వంకాయ కర్రీ</p>
+                    <button class="add-to-cart" data-item="Gutti Vankaya Curry / గుత్తి వంకాయ కర్రీ">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Aloo with Green Peas Kurma">
+                    <p>Aloo with Green Peas Kurma</p>
+                    <p class="telugu">ఆలూ, పచ్చి బఠానీ కూర్మా</p>
+                    <button class="add-to-cart" data-item="Aloo with Green Peas Kurma / ఆలూ, పచ్చి బఠానీ కూర్మా">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category" data-category="talinpu">
+            <h3>Talinpu / తాలింపు (Choose One / ఒకటి ఎంచుకోండి)</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Bendakaya Fry">
+                    <p>Bendakaya Fry</p>
+                    <p class="telugu">బెండకాయ ఫ్రై</p>
+                    <button class="add-to-cart" data-item="Bendakaya Fry / బెండకాయ ఫ్రై">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Dondakaya Fry">
+                    <p>Dondakaya Fry</p>
+                    <p class="telugu">దొండకాయ ఫ్రై</p>
+                    <button class="add-to-cart" data-item="Dondakaya Fry / దొండకాయ ఫ్రై">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Aloo Fry">
+                    <p>Aloo Fry</p>
+                    <p class="telugu">ఆలూ ఫ్రై</p>
+                    <button class="add-to-cart" data-item="Aloo Fry / ఆలూ ఫ్రై">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Vegetable Fry">
+                    <p>Vegetable Fry (Seasonal)</p>
+                    <p class="telugu">వెజిటబుల్ ఫ్రై (సీజన్‌లో)</p>
+                    <button class="add-to-cart" data-item="Vegetable Fry (Seasonal) / వెజిటబుల్ ఫ్రై (సీజన్‌లో)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category" data-category="pappu">
+            <h3>Pappu / పప్పు (Choose One / ఒకటి ఎంచుకోండి)</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Menthi Pappu">
+                    <p>Menthi Pappu</p>
+                    <p class="telugu">మెంతి పప్పు</p>
+                    <button class="add-to-cart" data-item="Menthi Pappu / మెంతి పప్పు">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Gongura Pappu">
+                    <p>Gongura Pappu</p>
+                    <p class="telugu">గోంగూర పప్పు</p>
+                    <button class="add-to-cart" data-item="Gongura Pappu / గోంగూర పప్పు">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Mixed Akkukura Pappu">
+                    <p>Mixed Akkukura Pappu</p>
+                    <p class="telugu">మిక్స్డ్ అక్కుకూర పప్పు</p>
+                    <button class="add-to-cart" data-item="Mixed Akkukura Pappu / మిక్స్డ్ అక్కుకూర పప్పు">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Endu Mirchi Pappu">
+                    <p>Endu Mirchi Pappu</p>
+                    <p class="telugu">ఎండు మిర్చి పప్పు</p>
+                    <button class="add-to-cart" data-item="Endu Mirchi Pappu / ఎండు మిర్చి పప్పు">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category" data-category="rasam">
+            <h3>Rasam / రసం (Choose One / ఒకటి ఎంచుకోండి)</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Miriyala+Rasam" alt="Miriyala Rasam">
+                    <p>Miriyala Rasam</p>
+                    <p class="telugu">మిరియాల రసం</p>
+                    <button class="add-to-cart" data-item="Miriyala Rasam / మిరియాల రసం">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Tomato+Rasam" alt="Tomato Rasam">
+                    <p>Tomato Rasam</p>
+                    <p class="telugu">టొమాటో రసం</p>
+                    <button class="add-to-cart" data-item="Tomato Rasam / టొమాటో రసం">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Pappu+Charu" alt="Pappu Charu">
+                    <p>Pappu Charu</p>
+                    <p class="telugu">పప్పు చారు</p>
+                    <button class="add-to-cart" data-item="Pappu Charu / పప్పు చారు">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Ulava+Charu" alt="Ulava Charu">
+                    <p>Ulava Charu</p>
+                    <p class="telugu">ఉలవ చారు</p>
+                    <button class="add-to-cart" data-item="Ulava Charu / ఉలవ చారు">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category" data-category="pachhallu">
+            <h3>Pachhallu (Chutney) / పచ్చల్లు (Choose One / ఒకటి ఎంచుకోండి)</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Tomato Pachhadi">
+                    <p>Tomato Pachhadi</p>
+                    <p class="telugu">టమోటో పచ్చడి</p>
+                    <button class="add-to-cart" data-item="Tomato Pachhadi / టమోటో పచ్చడి">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Verusenaga Pappu Pachhadi">
+                    <p>Verusenaga Pappu Pachhadi</p>
+                    <p class="telugu">వేరుసెనగ పప్పు పచ్చడి</p>
+                    <button class="add-to-cart" data-item="Verusenaga Pappu Pachhadi / వేరుసెనగ పప్పు పచ్చడి">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Mamidikaya Pachhadi">
+                    <p>Mamidikaya Pachhadi (Summer)</p>
+                    <p class="telugu">మామిడికాయ పచ్చడి (వేసవిలో)</p>
+                    <button class="add-to-cart" data-item="Mamidikaya Pachhadi (Summer) / మామిడికాయ పచ్చడి (వేసవిలో)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Gongura Pachhadi">
+                    <p>Gongura Pachhadi</p>
+                    <p class="telugu">గోంగూర పచ్చడి</p>
+                    <button class="add-to-cart" data-item="Gongura Pachhadi / గోంగూర పచ్చడి">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="asstes/img/Logo.png" alt="Chintatokku Pachhadi">
+                    <p>Chintatokku Pachhadi</p>
+                    <p class="telugu">చింతతొక్కు పచ్చడి</p>
+                    <button class="add-to-cart" data-item="Chintatokku Pachhadi / చింతతొక్కు పచ్చడి">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="sweets-snacks"><br>
+        <h2>Sweets & Snacks / స్వీట్లు & స్నాక్స్</h2><br><br>
+        <div class="menu-category" data-category="sweets">
+            <h3>Sweets / స్వీట్లు (Choose One / ఒకటి ఎంచుకోండి)</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Semiya+Payasam" alt="Semiya Payasam">
+                    <p>Semiya Payasam</p>
+                    <p class="telugu">సేమియా పాయసం</p>
+                    <button class="add-to-cart" data-item="Semiya Payasam / సేమియా పాయసం">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Chanagaballa+Payasam" alt="Chanagaballa Payasam">
+                    <p>Chanagaballa Payasam</p>
+                    <p class="telugu">చనగబాల్ల పాయసం</p>
+                    <button class="add-to-cart" data-item="Chanagaballa Payasam / చనగబాల్ల పాయసం">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Dry+Fruits+Kheer" alt="Dry Fruits Kheer">
+                    <p>Dry Fruits Kheer</p>
+                    <p class="telugu">డ్రై ఫ్రూట్స్ ఖీర్</p>
+                    <button class="add-to-cart" data-item="Dry Fruits Kheer / డ్రై ఫ్రూట్స్ ఖీర్">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Gummadi+Kaya+Halwa" alt="Gummadi Kaya Halwa">
+                    <p>Gummadi Kaya Halwa</p>
+                    <p class="telugu">గుమ్మడి కాయ హల్వా</p>
+                    <button class="add-to-cart" data-item="Gummadi Kaya Halwa / గుమ్మడి కాయ హల్వా">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Ravva+Kesari" alt="Ravva Kesari">
+                    <p>Ravva Kesari</p>
+                    <p class="telugu">రవ్వ కేసరి</p>
+                    <button class="add-to-cart" data-item="Ravva Kesari / రవ్వ కేసరి">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Chekkera+Pongal" alt="Chekkera Pongal">
+                    <p>Chekkera Pongal</p>
+                    <p class="telugu">చెక్కెర పొంగల్</p>
+                    <button class="add-to-cart" data-item="Chekkera Pongal / చెక్కెర పొంగల్">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Bellam+Annam" alt="Bellam Annam">
+                    <p>Bellam Annam</p>
+                    <p class="telugu">బెల్లం అన్నం</p>
+                    <button class="add-to-cart" data-item="Bellam Annam / బెల్లం అన్నం">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Bread+Halwa" alt="Bread Halwa">
+                    <p>Bread Halwa</p>
+                    <p class="telugu">బ్రెడ్ హల్వా</p>
+                    <button class="add-to-cart" data-item="Bread Halwa / బ్రెడ్ హల్వా">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category" data-category="side-dishes">
+            <h3>Side Dishes / సైడ్ డిష్‌లు (Choose One / ఒకటి ఎంచుకోండి)</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Alasandala+Vada" alt="Alasandala Vada">
+                    <p>Alasandala Vada</p>
+                    <p class="telugu">అలసందల వడ</p>
+                    <button class="add-to-cart" data-item="Alasandala Vada / అలసందల వడ">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Uddi+Vada" alt="Uddi Vada">
+                    <p>Uddi Vada</p>
+                    <p class="telugu">ఉద్దీ వడ</p>
+                    <button class="add-to-cart" data-item="Uddi Vada / ఉద్దీ వడ">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Masala+Vada" alt="Masala Vada">
+                    <p>Masala Vada</p>
+                    <p class="telugu">మసాలా వడ</p>
+                    <button class="add-to-cart" data-item="Masala Vada / మసాలా వడ">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Mirchi+Bajji" alt="Mirchi Bajji">
+                    <p>Mirchi Bajji</p>
+                    <p class="telugu">మిర్చి బజ్జీ</p>
+                    <button class="add-to-cart" data-item="Mirchi Bajji / మిర్చి బజ్జీ">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Aloo+Bhajji" alt="Aloo Bhajji">
+                    <p>Aloo Bhajji</p>
+                    <p class="telugu">ఆలూ బజ్జీ</p>
+                    <button class="add-to-cart" data-item="Aloo Bhajji / ఆలూ బజ్జీ">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="additional">
+        <h2>Additional Items / అదనపు అంశాలు</h2>
+        <div class="menu-category" data-category="additional">
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Special+Raita" alt="Special Raita">
+                    <p>Special Raita</p>
+                    <p class="telugu">స్పెషల్ రైతా</p>
+                    <button class="add-to-cart" data-item="Special Raita / స్పెషల్ రైతా">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=White+Rice" alt="White Rice">
+                    <p>White Rice</p>
+                    <p class="telugu">వైట్ రైస్</p>
+                    <button class="add-to-cart" data-item="White Rice / వైట్ రైస్">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Perugu" alt="Perugu">
+                    <p>Perugu (Curd)</p>
+                    <p class="telugu">పెరుగు</p>
+                    <button class="add-to-cart" data-item="Perugu (Curd) / పెరుగు">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Vadiyalu" alt="Vadiyalu">
+                    <p>Vadiyalu</p>
+                    <p class="telugu">వడియాలు</p>
+                    <button class="add-to-cart" data-item="Vadiyalu / వడియాలు">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Arati+Pandu" alt="Arati Pandu">
+                    <p>Arati Pandu (Banana)</p>
+                    <p class="telugu">అరటి పండు</p>
+                    <button class="add-to-cart" data-item="Arati Pandu (Banana) / అరటి పండు">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img class="item-image" src="https://via.placeholder.com/250x100?text=Plates+Glasses" alt="Plates & Glasses">
+                    <p>Plates & Glasses</p>
+                    <p class="telugu">ప్లేట్లు & గ్లాసులు</p>
+                    <button class="add-to-cart" data-item="Plates & Glasses / ప్లేట్లు & గ్లాసులు">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <a href="mailto:info@maddiletiservices.com" class="cta-button">Contact to Order / ఆర్డర్ చేయడానికి సంప్రదించండి</a>
+    </section>
+    <footer>
+        <p>© 2025 Maddileti Services. All Rights Reserved.</p>
+    </footer>
+    <script src="asstes/js/cart.js"></script>
+</body>
+</html>
