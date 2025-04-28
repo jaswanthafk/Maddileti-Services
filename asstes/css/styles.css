@@ -142,6 +142,10 @@ footer {
     section h2 {
         font-size: 2rem;
     }
+    .menuribbon{
+        display: flex;
+        flex-direction: column;
+    }
 }
 .menuribbon{
     display: flex;
